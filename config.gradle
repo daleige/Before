@@ -1,4 +1,6 @@
 ext {
+    IS_RELEASE = true
+
     // system build
     TARGET_SDK_VERSION = 32
     COMPILE_SDK_VERSION = 32

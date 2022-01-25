@@ -1,12 +1,19 @@
-plugins {
-    id 'com.android.library'
-    id 'kotlin-android'
+apply from: "../config.gradle"
+
+if (IS_RELEASE) {
+    apply plugin: 'com.android.library'
+} else {
+    apply plugin: 'com.android.application'
 }
+apply plugin: 'kotlin-android'
 
 android {
     compileSdk 32
 
     defaultConfig {
+        if (!IS_RELEASE) {
+            applicationId "com.chenyangqi.before.personal"
+        }
         minSdk 21
         targetSdk 32
         versionCode 1
