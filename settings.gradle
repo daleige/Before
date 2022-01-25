@@ -1,0 +1,21 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "Before"
+include ':app'
+include ':base-common'
+include ':base-http'
+include ':service-qrcode'
+include ':business-login'
+include ':business-personal'
+include ':business-music'
+include ':business-video'
+include ':business-community'
+include ':service-player'
+include ':service-image'
+include ':base-ui'

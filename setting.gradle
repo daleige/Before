@@ -1,0 +1,8 @@
+ext {
+    // system build
+    TARGET_SDK_VERSION = 32
+    COMPILE_SDK_VERSION = 32
+    MIN_SDK_VERSION = 21
+    BUILD_TOOLS_VERSION = '29.0.2'
+
+}
