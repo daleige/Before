@@ -2,10 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.chenyangqi.business.qrcode">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application>
         <activity
             android:name="com.chenyangqi.service.qrcode.QrCodeTestActivity"
             android:exported="false" />
     </application>
-
 </manifest>
